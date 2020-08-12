@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex trading page</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <section class="col">
+        <div class="style-form">
+            <div class="head-row">
+                <div class="h1-style">
+                    <h1>Forex trading page</h1>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="row-style">
+                    <span class="usd-style-text">EURUSD</span>
+                </div>
+                <div class="row-order">
+                    <p id ="usd"></p>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="row-style">
+                    <span class="aud-style-text">USDJPY</span>
+                </div>
+                <div class="row-order">
+                    <p id ="aud"></p>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="row-style">
+                    <span class="cad-style-text">GBPUSD</span>
+                </div>
+                <div class="row-order">
+                    <p id ="cad"></p>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="row-style">
+                    <span class="bgn-style-text">AUDUSD</span>
+                </div>
+                <div class="row-order">
+                    <p id ="bgn"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="currencies.json"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            loadData();
+        };
+    </script>
+</body>
+</html>
